@@ -1,0 +1,148 @@
+@import 'variables';
+
+h1,
+h2,
+h3 {
+    a {
+        color: $titleLinkColor;
+        text-decoration: none;
+
+        &:hover {
+            color: $titleLinkHoverColor;
+        }
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem 0;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2rem 0 0.5rem 0;
+}
+
+h3 {
+    font-size: 1.1rem;
+    // text-transform: uppercase;
+    font-weight: 600;
+    margin: 2rem 0 0.5rem 0;
+}
+
+p {
+    line-height: 1.65;
+
+    & + & {
+        margin-top: 0.9rem;
+    }
+}
+
+p,
+li {
+    a {
+        color: $linkColor;
+        text-decoration: none;
+        box-shadow: 0 2px 0 $linkBorderColor;
+
+        &:hover {
+            color: $linkHoverColor;
+            box-shadow: 0 2px 0 $linkBorderHoverColor;
+        }
+    }
+}
+
+ol,
+ul {
+    margin: 1rem 0 2rem;
+
+    li {
+        margin-bottom: 0.4rem;
+        position: relative;
+    }
+}
+
+ol  {
+    counter-reset: list-counter;
+
+    li {
+        padding-left: 35px;
+
+        &::before {
+            content: counter(list-counter, decimal-leading-zero) '.';
+            position: absolute;
+            left: 0;
+            top: 0;
+            counter-increment: list-counter;
+            margin-right: 10px;
+            font-weight: 500;
+        }
+    }
+}
+
+ul {
+    li {
+        padding-left: 18px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: currentColor;
+            position: absolute;
+            left: 0;
+            top: 9px;
+        }
+    }
+}
+
+strong {
+    font-weight: 500;
+}
+
+em {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 2rem 0;
+    padding: 10px 0 10px 20px;
+    border-left: 3px solid $blockquoteBorderColor;
+}
+
+hr {
+    border: none;
+    position: relative;
+    margin-left: -50px;
+    width: 150px;
+    margin: 4rem auto;
+
+    &,
+    &::before,
+    &::after {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: $hrColor;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+
+    &::before {
+        left: 30px;
+    }
+
+    &::after {
+        right: 30px;
+    }
+}

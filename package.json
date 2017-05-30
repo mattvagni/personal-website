@@ -1,0 +1,11 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "sass-lint -v -q"
+  },
+  "devDependencies": {
+    "sass-lint": "^1.10.2"
+  }
+}

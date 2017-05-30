@@ -1,0 +1,119 @@
+@import 'variables';
+
+// Inline code snippets
+code {
+    font-family: 'Menlo', 'Source Code Pro', serif;
+    font-size: 0.8rem;
+    background: $inlineCodeBackgroundColor;
+    padding: 3px 6px;
+}
+
+// Code blocks
+pre {
+    code {
+        padding: 0;
+        background: none;
+        font-size: 0.8rem;
+        white-space: pre-wrap;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+}
+
+.highlight     {
+    background: $codeThemeColor00;
+    border-radius: 5px;
+    line-height: 1.25;
+    padding: 20px;
+    margin: 1.4rem 0;
+    font-family: $monoFontFamily;
+
+    pre {
+        code {
+            color: $codeThemeColor01;
+        }
+    }
+
+    .c  { color: $codeThemeColor02; }
+    .g  { color: $codeThemeColor01; }
+    .k  { color: $codeThemeColor03; }
+    .l  { color: $codeThemeColor01; }
+    .n  { color: $codeThemeColor01; }
+    .o  { color: $codeThemeColor03; }
+    .p  { color: $codeThemeColor01; }
+    .x  { color: $codeThemeColor04; }
+    .cm { color: $codeThemeColor02; }
+    .cp { color: $codeThemeColor03; }
+    .c1 { color: $codeThemeColor02; }
+    .cs { color: $codeThemeColor03; }
+    .gd { color: $codeThemeColor05; }
+
+    .ge {
+        color: $codeThemeColor01;
+        font-style: italic;
+    }
+
+    .gr { color: $codeThemeColor06; }
+    .gh { color: $codeThemeColor04; }
+
+    .gi {
+        color: $codeThemeColor03;
+        background: $codeThemeColor09;
+    }
+
+    .go { color: $codeThemeColor01; }
+    .gp { color: $codeThemeColor01; }
+
+    .gs {
+        color: $codeThemeColor01;
+        font-weight: bold;
+    }
+
+    .gu { color: $codeThemeColor04; }
+    .gt { color: $codeThemeColor01; }
+    .kc { color: $codeThemeColor04; }
+    .kd { color: $codeThemeColor07; }
+    .kn { color: $codeThemeColor03; }
+    .kp { color: $codeThemeColor03; }
+    .kr { color: $codeThemeColor07; }
+    .kt { color: $codeThemeColor06; }
+    .ld { color: $codeThemeColor01; }
+    .m  { color: $codeThemeColor05; }
+    .s  { color: $codeThemeColor05; }
+    .na { color: $codeThemeColor01; }
+    .nb { color: $codeThemeColor08; }
+    .nc { color: $codeThemeColor07; }
+    .no { color: $codeThemeColor04; }
+    .nd { color: $codeThemeColor07; }
+    .ni { color: $codeThemeColor04; }
+    .ne { color: $codeThemeColor04; }
+    .nf { color: $codeThemeColor07; }
+    .nl { color: $codeThemeColor01; }
+    .nn { color: $codeThemeColor01; }
+    .nx { color: $codeThemeColor01; }
+    .py { color: $codeThemeColor01; }
+    .nt { color: $codeThemeColor07; }
+    .nv { color: $codeThemeColor07; }
+    .ow { color: $codeThemeColor03; }
+    .w  { color: $codeThemeColor01; }
+    .mf { color: $codeThemeColor05; }
+    .mh { color: $codeThemeColor05; }
+    .mi { color: $codeThemeColor05; }
+    .mo { color: $codeThemeColor05; }
+    .sb { color: $codeThemeColor02; }
+    .sc { color: $codeThemeColor05; }
+    .sd { color: $codeThemeColor01; }
+    .s2 { color: $codeThemeColor05; }
+    .se { color: $codeThemeColor04; }
+    .sh { color: $codeThemeColor01; }
+    .si { color: $codeThemeColor05; }
+    .sx { color: $codeThemeColor05; }
+    .sr { color: $codeThemeColor06; }
+    .s1 { color: $codeThemeColor05; }
+    .ss { color: $codeThemeColor05; }
+    .bp { color: $codeThemeColor07; }
+    .vc { color: $codeThemeColor07; }
+    .vg { color: $codeThemeColor07; }
+    .vi { color: $codeThemeColor07; }
+    .il { color: $codeThemeColor05; }
+}

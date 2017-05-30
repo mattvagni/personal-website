@@ -1,0 +1,27 @@
+@import 'variables';
+
+.posts-list {
+    position: relative;
+    z-index: 2;
+    border-bottom: 2px solid $baseBorderColor;
+
+    &__title {
+        color: $subtleTextColor;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    &__row {
+        border-top: 2px solid $baseBorderColor;
+        padding: 20px 0;
+    }
+
+    &__row-title {
+        margin: 0 0 5px 0;
+    }
+
+    &__row-date {
+        color: $subtleTextColor;
+        font-size: 0.9rem;
+    }
+}

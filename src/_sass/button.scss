@@ -1,0 +1,40 @@
+
+.button {
+    margin: 0.9rem 0;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background: $buttonColor;
+    color: $buttonTextColor;
+    font-weight: 500;
+    padding: 9px 30px;
+    max-width: 400px;
+    text-align: center;
+    transition: box-shadow 200ms ease, transform 150ms ease;
+    text-decoration: none;
+    font-size: 0.95rem;
+
+    &__icon {
+        margin-right: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+
+        svg {
+            width: 20px;
+        }
+    }
+
+    &:hover {
+        color: $buttonTextColor;
+        // box-shadow: 0 7px 14px rgba(50, 50, 50, .1), 0 3px 6px rgba(0, 0, 0, .09); // sass-lint:disable-line no-color-literals
+        box-shadow: 0 4px 6px rgba(50, 50, 50, .1), 0 1px 3px rgba(0, 0, 0, .08); // sass-lint:disable-line no-color-literals
+        transform: translate3d(0, -1px, 0);
+    }
+
+    &:active {
+        transform: translate3d(0, 1px, 0);
+    }
+}

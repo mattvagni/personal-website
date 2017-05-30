@@ -1,0 +1,35 @@
+.footer {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+
+    &__credit {
+        color: $subtleTextColor;
+        font-size: 0.9rem;
+        float: left;
+
+        a {
+            color: inherit;
+
+            &:hover {
+                color: $linkColor;
+            }
+        }
+
+        @media (max-width: 660px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__twitter {
+        float: right;
+    }
+
+    &__twitter,
+    &__credit {
+        @media (max-width: 660px) {
+            float: none;
+            display: block;
+        }
+    }
+}

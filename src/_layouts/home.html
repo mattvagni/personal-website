@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% include hero.html %}
+
+<div class="posts-list">
+    <div class="posts-list__title">
+        Stuff to read:
+    </div>
+
+    {% for post in site.posts %}
+        <div class="posts-list__row">
+            <h2 class="posts-list__row-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h2>
+
+            <div class="posts-list__row-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+<script src="{{ "/scripts/circles.js" | relative_url }}"></script>

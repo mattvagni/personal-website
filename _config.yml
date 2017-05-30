@@ -1,0 +1,12 @@
+title: 1005
+source: src
+destination:: build
+markdown: redcarpet
+highlighter: pygments
+
+redcarpet:
+  extensions:
+  - fenced_code_blocks
+
+sass:
+  style: :compressed

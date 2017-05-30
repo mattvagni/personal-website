@@ -1,0 +1,12 @@
+<figure class="post-image {% if include.size%}post-image--{{include.size}}{% endif %}">
+    <a href="{{ include.src }}">
+        <img src="{{ include.src }}" {% if include.alt %}alt="{{ include.alt }}"{%else if include.caption%}alt="{{ include.caption }}"{% endif %}>
+    </a>
+
+    {% if include.caption %}
+        <figcaption class="post-image__caption">
+            {{ include.caption }}
+        </figcaption>
+    {% endif %}
+
+</figure>

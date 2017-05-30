@@ -1,0 +1,90 @@
+@import 'variables';
+
+.hero {
+    margin-bottom: 60px;
+    position: relative;
+
+    &__headline {
+        font-weight: 600;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__subtle {
+        color: $subtleTextColor;
+    }
+
+    &__circle {
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        width: 100px;
+        height: 100px;
+    }
+
+    &--device-orientation &__circle {
+        transition: transform 350ms linear;
+    }
+
+    &--show-circles &__circle-inner {
+        transform: scale(1);
+    }
+
+    &__circle-inner {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border-radius: 100%;
+        transform: scale(0);
+        transition: transform 600ms cubic-bezier(0.77, 0, 0.175, 1), background 3s ease;
+    }
+
+    &__circle--one &__circle-inner {
+        background: $circleOneBaseColor;
+        background: linear-gradient(35deg, $circleOneHighlightColor , $circleOneBaseColor); //sass-lint:disable-line no-duplicate-properties
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+        margin-top: -50px;
+    }
+
+    &__circle--two &__circle-inner {
+        background: $circleTwoBaseColor;
+        background: linear-gradient(42deg, $circleTwoBaseColor, $circleTwoHighlightColor); //sass-lint:disable-line no-duplicate-properties
+        width: 90px;
+        height: 90px;
+        margin-left: -45px;
+        margin-top: -45px;
+    }
+
+    &__circle--three &__circle-inner {
+        background: $circleThreeBaseColor;
+        background: linear-gradient(to bottom right, $circleThreeBaseColor , $circleThreeHighlightColor); //sass-lint:disable-line no-duplicate-properties
+        width: 120px;
+        height: 120px;
+        margin-left: -60px;
+        margin-top: -60px;
+    }
+
+    &__circle--four &__circle-inner {
+        background: $circleFourBaseColor;
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+        margin-top: -100px;
+        display: none;
+    }
+
+    @media (min-width: 700px) {
+
+        // Show the masking 'black' circle on mobile
+        &__circle--four &__circle-inner {
+            display: block;
+        }
+    }
+}

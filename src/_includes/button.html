@@ -1,0 +1,18 @@
+<div>
+<a href="{{ include.href }}" class="button">
+
+    {% if include.icon %}
+        <span class="button__icon">
+            {% if include.icon == 'github' %}
+                {% include icon-github.html %}
+            {% else if include.icon == 'twitter' %}
+                {% include icon-twitter.html %}
+            {% else if include.icon == 'linkedin' %}
+                {% include icon-linkedin.html %}
+            {% endif %}
+        </span>
+    {% endif %}
+
+    {{include.text}}
+</a>
+</div>

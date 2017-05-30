@@ -1,0 +1,24 @@
+@import 'variables';
+
+.post-content {
+
+    &__date {
+        color: $subtleTextColor;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    &__back {
+        display: block;
+        max-width: 150px;
+        font-size: 2rem;
+        text-decoration: none;
+        color: $linkColor;
+        transition: transform 200ms ease;
+
+        &:hover {
+            color: $linkHoverColor;
+            transform: translate3d(-10px, 0, 0);
+        }
+    }
+}

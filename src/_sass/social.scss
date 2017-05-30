@@ -1,0 +1,44 @@
+@import 'variables';
+
+.social {
+    // sass-lint:disable-block no-color-literals
+    position: relative;
+    z-index: 1;
+
+    &__item {
+        text-decoration: none;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    &__item--github {
+        &:hover {
+            path {
+                fill: #212121;
+            }
+        }
+    }
+
+    &__item--linkedin {
+        &:hover {
+            path {
+                fill: #0077B5;
+            }
+        }
+    }
+
+    &__item--twitter {
+        &:hover {
+            path {
+                fill: #1DA1F2;
+            }
+        }
+    }
+
+    path {
+        transition: fill 400ms ease;
+        fill: #DEDEDE;
+    }
+}

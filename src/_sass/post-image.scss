@@ -1,0 +1,42 @@
+@import 'variables';
+
+.post-image {
+    margin: 1.5rem 0;
+
+    img {
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+        top: 0;
+    }
+
+    // size 'medium'
+    &--medium {
+        img {
+            max-width: 900px;
+
+            @media (max-width: 900px) {
+                width: calc(100vw - 40px);
+            }
+        }
+    }
+
+    // size 'large'
+    &--large {
+        img {
+            max-width: 1400px;
+
+            @media (max-width: 1400px) {
+                width: calc(100vw - 40px);
+            }
+        }
+    }
+
+    &__caption {
+        color: $subtleTextColor;
+        margin-top: 5px;
+        font-size: 0.85rem;
+        text-align: center;
+        font-style: italic;
+    }
+}
