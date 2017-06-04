@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 4,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#A4A6A3FF",
+        "font" : "Helvetica Neue",
+        "color" : "#BABABAFF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#A5A5A5FF",
+        "font" : "Helvetica",
+        "color" : "#B2B2B2FF"
+      },
+      "backgroundSelected" : "#0000000F",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#000000FF",
+        "font" : "System",
+        "color" : "#000000FF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 4,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#00000000",
+      "spacing" : 10,
+      "text" : {
+        "size" : 32,
+        "colorSelected" : "#000000FF",
+        "font" : "System",
+        "color" : "#000000FF"
+      },
+      "backgroundSelected" : "#B2D7FFFF"
+    },
+    "window" : {
+      "color" : "#FFFFFF00",
+      "paddingHorizontal" : 10,
+      "width" : 560,
+      "borderPadding" : 10,
+      "borderColor" : "#FEFFFFFF",
+      "blur" : 0,
+      "roundness" : -7,
+      "paddingVertical" : 10
+    },
+    "credit" : "Matt Vagni",
+    "separator" : {
+      "color" : "#00000000",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#FEFFFF19",
+      "thickness" : 2
+    },
+    "name" : "Clean"
+  }
+}
