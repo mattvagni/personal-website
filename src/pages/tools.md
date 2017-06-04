@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Tools'
+permalink: /pages/tools/
 date: '2016-05-03'
 ---
 
