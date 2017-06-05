@@ -9,7 +9,7 @@ More as a reminder for myself (when I next switch laptop) but also to give credi
 
 ---
 
-## Code Stuff
+## Atom Setup
 My editor of choice is Atom when doing 99% of work - the eco-system is amazing and it being open-source would make me want to support it even if it weren't as good as it is.
 
 These are the plugins and theme I use:
@@ -118,6 +118,29 @@ Details: [https://atom.io/packages/zentabs](https://atom.io/packages/zentabs)
 I first discovered how useful this behavior can be when using PyCharm. Basically what this package let's you set-up is a maximum number of open tabs. If you are jumping between many files this package will auto-close old tabs or tabs that have not been edited by you. If you want to go extreme, you can even configure zentabs to only keep one tab open at any given time. Then using `cmd + p` you can access recently open files. Very useful when working on a project you are unfamiliar with and are jumping between loads of files: no more death by 19,213 tabs.
 
 It also let's you pin tabs but I've never really found that to be useful.
+
+---
+
+## iTerm Setup
+
+I literally just use iTerm because it let's you ⌘ + click on links or files to open them in your browser or editor 😅
+
+### Theme
+
+This is the theme you can see in the [screenshots]({% post_url 2017-05-28-cookiecutter %}) on here.
+
+Feel free to [download it](/downloads/iterm-theme.itermcolors) and use it, it's based on this [Firewatch iTerm theme](https://github.com/rakr/iterm-two-firewatch/blob/master/two-firewatch-dark.itermcolors) with some slight modifications.
+
+### .bash_profile
+
+Things included in my bash_profile:
+
+- A nice two-line bash prompt that shows the current git branch (if it's a git repo) which also tells you if whether you have uncommitted changes or not.
+- A `open-pr` command that opens the url to a new PR page using the current repo and branch.
+- A bunch of useful aliases
+- Bash/Git autocomplete
+
+<script src="https://gist.github.com/mattvagni/980a765b3c0b3639dc5e9e6d32b11f6e.js"></script>
 
 ---
 
